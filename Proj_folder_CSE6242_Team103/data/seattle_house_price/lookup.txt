@@ -1,0 +1,35 @@
+TrafficNoise
+1	MODERATE
+2	HIGH
+3	EXTREME
+
+PowerLines
+0   N
+1   Y
+
+WaterProblems
+0   N
+1   Y
+
+BldgGrade
+1	1  Cabin
+2	2  Substandard
+3	3  Poor
+4	4  Low
+5	5  Fair
+6	6  Low Average
+7	7  Average
+8	8  Good
+9	9  Better
+10	10 Very Good
+11	11 Excellent
+12	12 Luxury
+13	13 Mansion
+20	Exceptional Properties
+
+Condition
+1	Poor
+2	Fair
+3	Average
+4	Good
+5	Very Good
