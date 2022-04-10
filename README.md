@@ -8,3 +8,6 @@ Proj folder for team103.
 5) git commit -m "your message", commit your changes to the local branch
 6) git pull --> get updated git repo, for example, our team member's contribution needs to be updated to your local folder before you push
 7) git push --> push your modifications to the github repo, so that other memebers can pull and see.
+
+
+## For time series prediction of features, only one zip code from seattle has been done, with a monthly frequency and predict into 6 month into the future. Once we are fixed with which set of features to choose, we can run time series prediction on them simultaneously
