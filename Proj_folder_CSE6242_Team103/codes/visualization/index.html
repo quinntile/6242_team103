@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <title>House Price of Seattle & Austin in 2022</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <div class="root-container">
+    <h1 class="seattle-header">Seattle House Price in 2022 (Single Family House)</h1>
+    Year Built of House: <select id = "seattle_dropdown"></select>
+    <div id="seattle"></div>
+  </div>
+
+  <div class="root-container">
+    <h1 class="austin-header">Austin House Price in 2022</h1>
+    Property Type: <select id = "austin_dropdown"></select>
+    <div id="austin"></div>
+  </div>
+  <script type="text/javascript" src="lib/d3.v5.min.js"></script>
+  <script type="text/javascript" src="lib/d3-dsv.min.js"></script>
+  <script type="text/javascript" src="lib/d3-tip.min.js"></script>
+  <script type="text/javascript" src="choropleth_map.min.js"></script>
+</body>
+</html>

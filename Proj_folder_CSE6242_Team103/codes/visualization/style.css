@@ -1,0 +1,43 @@
+path.boundary-line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1.5px;
+}
+
+div.tip-window {
+  box-sizing: border-box;
+  padding: 2px 10px;
+  opacity: 0.8;
+  background: black;
+  color: white;
+}
+
+select {
+  padding: 0 1em 0 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.seattle-header {
+  color: #08519c;
+}
+
+.austin-header {
+  color: #a50f15;
+}
+
+div.root-container {
+  border:1px solid grey;
+  width: 800px;
+  padding: 0px 10px;
+}
+
+p {
+  margin: 3px;
+}
