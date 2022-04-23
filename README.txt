@@ -3,8 +3,8 @@ DESCRIPTION
 
  * This file contains instructions on how to set up the working environment so that prediction 
 of austin and seattle housing market data into the later half of Year 2022 can be performed. 
- * This package contains full functionality of preprocessing the data, including normalization, feature extraction, data cleaning, model creation, model hyperparameter tuning based on cross validation and model prediction.
- * Specifically, this package fits a random forest regressor for Austin housing market, and a light gradient boosting machine for Seattle individual houses. Both estimator has been validated using 10-fold cross validation and number of iterations during each grid search can be specified by the user.
+ * This package contains full functionality of preprocessing the data, including normalization, feature extraction, data cleaning, model creation, model hyperparameter tuning based on cross validation, model prediction, and model results visualization.
+ * Specifically, this package fits a random forest regressor for Austin housing market, a light gradient boosting machine for Seattle individual houses, and two prophet GAM models for both housing data. Both regression estimators have been validated using 10-fold cross validation and number of iterations during each grid search can be specified by the user.
  * In terms of time series forecasted features used in the regression for future:
    1) Austin mobility prediction - pycaret：naive forecaster
    2) SPY, DGL & Mortgage rate: prophet, GAM model
@@ -26,6 +26,8 @@ see requirements.txt for reference:
  * numpy==1.20.0
  * scikit-learn==0.23.2
  * pandas==1.3.5
+ * prophet==1.0
+ * matplotlib==3.1.3
 
 
 INSTALLATION
@@ -65,9 +67,13 @@ Separately, the EXECUTION of each step is:
  * Upon completion of the above functions in sequence, you can save the predicted data into the folder data by using pd.to_csv() API, so that these files can be used for visualization. Example is as below: 
       data.final.to_csv(current_dir[:-5] + '/visualization/data_source/Austin_price.csv')
     
+ * Run the ts_visualization.py code in the same local python kernel, where the fate of the modelling step is to use the results from regression and the raw data to build time series GAM models and to visualize the results for both location. Inside the Modelling class, we have defined several methods:
+ 
+    ## ts_learner(): create the model (GAM model for time series), and use the model to predict the house prices into the future. In our use case. For this model we predicted into the next 365 days. 
 
+ * Upon completion of the above functions in sequence, you can save the visualizations into the folder data by using matplotlib's pyplot module, so that five .png files can be generated into the visualization folders for some insights from both models.
 
-After completion of the above preprocessing and modelling steps, you can start exploring the housing market data in the form of an interactive visualization dashboard
+After completion of the above preprocessing and modeling steps, you can further explore the housing market data in a more advanced form of an interactive visualization dashboard
 Simply follow the below steps:
 
    * Open a terminal window
