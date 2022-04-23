@@ -13,7 +13,7 @@ of austin and seattle housing market data into the later half of Year 2022 can b
    5) unemployment rate: exponential smoothing
 
  * To submit bug reports and feature suggestions, or track changes, go to the github repo:
-   https://github.com/xiaoyangxuoo/SeattleAustinHousePred.git
+   https://github.com/quinntile/6242_team103
 
 
 REQUIREMENTS
@@ -31,7 +31,7 @@ see requirements.txt for reference:
 INSTALLATION
 ------------
  * Open a terminal in your current working directory, and run the following commands:
-    git clone https://github.com/xiaoyangxuoo/SeattleAustinHousePred.git
+    git clone https://github.com/quinntile/6242_team103
 
  * Open a terminal in your current working directory, and run the following commands:
     pip install -r requirements.txt
