@@ -1,0 +1,337 @@
+2022-04-19 20:43:43,906:INFO:PyCaret Supervised Module
+2022-04-19 20:43:43,907:INFO:ML Usecase: regression
+2022-04-19 20:43:43,907:INFO:version 2.3.10
+2022-04-19 20:43:43,907:INFO:Initializing setup()
+2022-04-19 20:43:43,907:INFO:setup(target=SalePrice, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=['median_income', 'YrBuilt', 'SqFtLot', 'SqFtTotLiving', 'mobility_us', 'mobility_county', 'stockSPY', 'mobility_abroad', 'unemployment', 'mobility_state'], numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=True, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=True, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=None, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-04-19 20:43:43,908:INFO:Checking environment
+2022-04-19 20:43:43,908:INFO:python_version: 3.7.9
+2022-04-19 20:43:43,908:INFO:python_build: ('tags/v3.7.9:13c94747c7', 'Aug 17 2020 18:58:18')
+2022-04-19 20:43:43,908:INFO:machine: AMD64
+2022-04-19 20:43:43,908:INFO:platform: Windows-10-10.0.19041-SP0
+2022-04-19 20:43:43,908:INFO:Memory: svmem(total=17083428864, available=8053239808, percent=52.9, used=9030189056, free=8053239808)
+2022-04-19 20:43:43,908:INFO:Physical Core: 4
+2022-04-19 20:43:43,909:INFO:Logical Core: 4
+2022-04-19 20:43:43,909:INFO:Checking libraries
+2022-04-19 20:43:43,909:INFO:pd==1.3.5
+2022-04-19 20:43:43,909:INFO:numpy==1.20.0
+2022-04-19 20:43:43,909:INFO:sklearn==0.23.2
+2022-04-19 20:43:43,909:INFO:lightgbm==3.3.2
+2022-04-19 20:43:43,910:WARNING:catboost not found
+2022-04-19 20:43:43,910:WARNING:xgboost not found
+2022-04-19 20:43:43,910:INFO:mlflow==1.24.0
+2022-04-19 20:43:43,910:INFO:Checking Exceptions
+2022-04-19 20:43:43,910:INFO:Declaring global variables
+2022-04-19 20:43:43,911:INFO:USI: 7ea0
+2022-04-19 20:43:43,911:INFO:pycaret_globals: {'y_train', 'y', 'iterative_imputation_iters_param', 'fold_shuffle_param', 'fold_generator', 'data_before_preprocess', 'fold_groups_param', 'X', 'pycaret_globals', '_all_models_internal', '_internal_pipeline', 'X_test', 'display_container', 'imputation_classifier', 'fix_imbalance_method_param', 'fold_param', 'create_model_container', 'logging_param', 'USI', 'fix_imbalance_param', 'master_model_container', 'transform_target_param', 'X_train', '_gpu_n_jobs_param', 'experiment__', 'imputation_regressor', '_ml_usecase', 'prep_pipe', '_all_metrics', 'n_jobs_param', 'fold_groups_param_full', 'gpu_param', 'dashboard_logger', '_all_models', 'seed', 'exp_name_log', 'html_param', 'y_test', 'stratify_param', 'log_plots_param', '_available_plots', 'transform_target_method_param', 'target_param'}
+2022-04-19 20:43:43,911:INFO:Preparing display monitor
+2022-04-19 20:43:43,911:INFO:Preparing display monitor
+2022-04-19 20:43:43,920:INFO:Importing libraries
+2022-04-19 20:43:43,920:INFO:Copying data for preprocessing
+2022-04-19 20:43:43,930:INFO:Declaring preprocessing parameters
+2022-04-19 20:43:43,942:INFO:Creating preprocessing pipeline
+2022-04-19 20:43:44,017:INFO:Preprocessing pipeline created successfully
+2022-04-19 20:43:44,017:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-04-19 20:43:44,017:INFO:Creating global containers
+2022-04-19 20:43:44,018:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-04-19 20:44:04,716:INFO:PyCaret Supervised Module
+2022-04-19 20:44:04,716:INFO:ML Usecase: regression
+2022-04-19 20:44:04,716:INFO:version 2.3.10
+2022-04-19 20:44:04,716:INFO:Initializing setup()
+2022-04-19 20:44:04,717:INFO:setup(target=SalePrice, ml_usecase=regression, available_plots={'parameter': 'Hyperparameters', 'residuals': 'Residuals', 'error': 'Prediction Error', 'cooks': 'Cooks Distance', 'rfe': 'Feature Selection', 'learning': 'Learning Curve', 'manifold': 'Manifold Learning', 'vc': 'Validation Curve', 'feature': 'Feature Importance', 'feature_all': 'Feature Importance (All)', 'tree': 'Decision Tree', 'residuals_interactive': 'Interactive Residuals'}, train_size=0.7, test_data=None, preprocess=True, imputation_type=simple, iterative_imputation_iters=5, categorical_features=None, categorical_imputation=constant, categorical_iterative_imputer=lightgbm, ordinal_features=None, high_cardinality_features=None, high_cardinality_method=frequency, numeric_features=['median_income', 'YrBuilt', 'SqFtLot', 'SqFtTotLiving', 'mobility_us', 'mobility_county', 'stockSPY', 'mobility_abroad', 'unemployment', 'mobility_state'], numeric_imputation=mean, numeric_iterative_imputer=lightgbm, date_features=None, ignore_features=None, normalize=True, normalize_method=zscore, transformation=False, transformation_method=yeo-johnson, handle_unknown_categorical=True, unknown_categorical_method=least_frequent, pca=False, pca_method=linear, pca_components=None, ignore_low_variance=True, combine_rare_levels=True, rare_level_threshold=0.1, bin_numeric_features=None, remove_outliers=False, outliers_threshold=0.05, remove_multicollinearity=True, multicollinearity_threshold=0.9, remove_perfect_collinearity=True, create_clusters=False, cluster_iter=20, polynomial_features=False, polynomial_degree=2, trigonometry_features=False, polynomial_threshold=0.1, group_features=None, group_names=None, feature_selection=False, feature_selection_threshold=0.8, feature_selection_method=classic, feature_interaction=False, feature_ratio=False, interaction_threshold=0.01, fix_imbalance=False, fix_imbalance_method=None, transform_target=True, transform_target_method=box-cox, data_split_shuffle=True, data_split_stratify=False, fold_strategy=kfold, fold=10, fold_shuffle=False, fold_groups=None, n_jobs=-1, use_gpu=False, custom_pipeline=None, html=True, session_id=None, log_experiment=False, experiment_name=None, experiment_custom_tags=None, log_plots=False, log_profile=False, log_data=False, silent=False, verbose=True, profile=False, profile_kwargs=None, display=None)
+2022-04-19 20:44:04,717:INFO:Checking environment
+2022-04-19 20:44:04,717:INFO:python_version: 3.7.9
+2022-04-19 20:44:04,717:INFO:python_build: ('tags/v3.7.9:13c94747c7', 'Aug 17 2020 18:58:18')
+2022-04-19 20:44:04,717:INFO:machine: AMD64
+2022-04-19 20:44:04,717:INFO:platform: Windows-10-10.0.19041-SP0
+2022-04-19 20:44:04,717:INFO:Memory: svmem(total=17083428864, available=8045133824, percent=52.9, used=9038295040, free=8045133824)
+2022-04-19 20:44:04,717:INFO:Physical Core: 4
+2022-04-19 20:44:04,717:INFO:Logical Core: 4
+2022-04-19 20:44:04,717:INFO:Checking libraries
+2022-04-19 20:44:04,717:INFO:pd==1.3.5
+2022-04-19 20:44:04,718:INFO:numpy==1.20.0
+2022-04-19 20:44:04,718:INFO:sklearn==0.23.2
+2022-04-19 20:44:04,718:INFO:lightgbm==3.3.2
+2022-04-19 20:44:04,718:WARNING:catboost not found
+2022-04-19 20:44:04,719:WARNING:xgboost not found
+2022-04-19 20:44:04,719:INFO:mlflow==1.24.0
+2022-04-19 20:44:04,719:INFO:Checking Exceptions
+2022-04-19 20:44:04,719:INFO:Declaring global variables
+2022-04-19 20:44:04,719:INFO:USI: cab8
+2022-04-19 20:44:04,720:INFO:pycaret_globals: {'seed', 'fold_shuffle_param', 'transform_target_method_param', 'transform_target_param', 'data_before_preprocess', '_all_models_internal', 'html_param', '_all_metrics', 'display_container', 'fix_imbalance_param', '_ml_usecase', 'fold_generator', 'imputation_classifier', 'dashboard_logger', 'fix_imbalance_method_param', 'imputation_regressor', 'experiment__', 'X_test', 'fold_groups_param_full', 'y_test', '_available_plots', '_gpu_n_jobs_param', 'fold_groups_param', '_internal_pipeline', 'logging_param', '_all_models', 'fold_param', 'X_train', 'prep_pipe', 'USI', 'iterative_imputation_iters_param', 'y', 'X', 'n_jobs_param', 'create_model_container', 'y_train', 'log_plots_param', 'target_param', 'pycaret_globals', 'gpu_param', 'stratify_param', 'exp_name_log', 'master_model_container'}
+2022-04-19 20:44:04,720:INFO:Preparing display monitor
+2022-04-19 20:44:04,720:INFO:Preparing display monitor
+2022-04-19 20:44:04,728:INFO:Importing libraries
+2022-04-19 20:44:04,728:INFO:Copying data for preprocessing
+2022-04-19 20:44:04,735:INFO:Declaring preprocessing parameters
+2022-04-19 20:44:04,749:INFO:Creating preprocessing pipeline
+2022-04-19 20:44:04,822:INFO:Preprocessing pipeline created successfully
+2022-04-19 20:44:04,823:ERROR:(Process Exit): setup has been interupted with user command 'quit'. setup must rerun.
+2022-04-19 20:44:04,823:INFO:Creating global containers
+2022-04-19 20:44:04,824:INFO:Internal pipeline: Pipeline(memory=None, steps=[('empty_step', 'passthrough')], verbose=False)
+2022-04-19 20:44:07,530:WARNING:Couldn't import xgboost.XGBRegressor
+2022-04-19 20:44:07,531:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-04-19 20:44:07,641:WARNING:Couldn't import xgboost.XGBRegressor
+2022-04-19 20:44:07,642:WARNING:Couldn't import catboost.CatBoostRegressor
+2022-04-19 20:44:07,642:INFO:Creating grid variables
+2022-04-19 20:44:07,649:INFO:create_model_container: 0
+2022-04-19 20:44:07,649:INFO:master_model_container: 0
+2022-04-19 20:44:07,650:INFO:display_container: 1
+2022-04-19 20:44:07,657:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=['Unnamed: 0'],
+                                      ml_usecase='regression',
+                                      numerical_features=['median_income',
+                                                          'YrBuilt', 'SqFtLot',
+                                                          'SqFtTotLiving',
+                                                          'mobility_us',
+                                                          'mobility_county',
+                                                          'stockSPY',
+                                                          'mobility_abroad',
+                                                          'unemployment',
+                                                          'mobility_state'],
+                                      target='SalePr...
+                ('dummy', Dummify(target='SalePrice')),
+                ('fix_perfect', Remove_100(target='SalePrice')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'),
+                ('fix_multi',
+                 Fix_multicollinearity(correlation_with_target_preference=None,
+                                       correlation_with_target_threshold=0.0,
+                                       target_variable='SalePrice',
+                                       threshold=0.9)),
+                ('dfs', 'passthrough'), ('pca', 'passthrough')],
+         verbose=False)
+2022-04-19 20:44:07,657:INFO:setup() succesfully completed......................................
+2022-04-19 20:44:07,720:INFO:Initializing create_model()
+2022-04-19 20:44:07,720:INFO:create_model(estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, verbose=True, system=True, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=None, return_train_score=False, kwargs={})
+2022-04-19 20:44:07,720:INFO:Checking exceptions
+2022-04-19 20:44:07,721:INFO:Preparing display monitor
+2022-04-19 20:44:07,735:INFO:Importing libraries
+2022-04-19 20:44:07,735:INFO:Copying training dataset
+2022-04-19 20:44:07,739:INFO:Defining folds
+2022-04-19 20:44:07,739:INFO:Declaring metric variables
+2022-04-19 20:44:07,751:INFO:Importing untrained model
+2022-04-19 20:44:07,765:INFO:Light Gradient Boosting Machine Imported succesfully
+2022-04-19 20:44:07,791:INFO:Starting cross validation
+2022-04-19 20:44:07,797:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-04-19 20:44:16,938:INFO:Calculating mean and std
+2022-04-19 20:44:16,938:INFO:Creating metrics dataframe
+2022-04-19 20:44:16,959:INFO:Finalizing model
+2022-04-19 20:44:18,031:INFO:Uploading results into container
+2022-04-19 20:44:18,031:INFO:Uploading model into container now
+2022-04-19 20:44:18,032:INFO:create_model_container: 1
+2022-04-19 20:44:18,032:INFO:master_model_container: 1
+2022-04-19 20:44:18,032:INFO:display_container: 2
+2022-04-19 20:44:18,034:INFO:PowerTransformedTargetRegressor(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                power_transformer_method='box-cox',
+                                power_transformer_standardize=True,
+                                random_state=8...
+                                                        importance_type='split',
+                                                        learning_rate=0.1,
+                                                        max_depth=-1,
+                                                        min_child_samples=20,
+                                                        min_child_weight=0.001,
+                                                        min_split_gain=0.0,
+                                                        n_estimators=100,
+                                                        n_jobs=-1,
+                                                        num_leaves=31,
+                                                        objective=None,
+                                                        random_state=880,
+                                                        reg_alpha=0.0,
+                                                        reg_lambda=0.0,
+                                                        silent='warn',
+                                                        subsample=1.0,
+                                                        subsample_for_bin=200000,
+                                                        subsample_freq=0),
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0)
+2022-04-19 20:44:18,034:INFO:create_model() succesfully completed......................................
+2022-04-19 20:44:18,122:INFO:Initializing tune_model()
+2022-04-19 20:44:18,122:INFO:tune_model(estimator=PowerTransformedTargetRegressor(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                power_transformer_method='box-cox',
+                                power_transformer_standardize=True,
+                                random_state=8...
+                                                        importance_type='split',
+                                                        learning_rate=0.1,
+                                                        max_depth=-1,
+                                                        min_child_samples=20,
+                                                        min_child_weight=0.001,
+                                                        min_split_gain=0.0,
+                                                        n_estimators=100,
+                                                        n_jobs=-1,
+                                                        num_leaves=31,
+                                                        objective=None,
+                                                        random_state=880,
+                                                        reg_alpha=0.0,
+                                                        reg_lambda=0.0,
+                                                        silent='warn',
+                                                        subsample=1.0,
+                                                        subsample_for_bin=200000,
+                                                        subsample_freq=0),
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=1, custom_grid=None, optimize=MAE, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=False, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, display=None, return_train_score=False, kwargs={})
+2022-04-19 20:44:18,122:INFO:Checking exceptions
+2022-04-19 20:44:18,123:INFO:Preparing display monitor
+2022-04-19 20:44:18,151:INFO:Copying training dataset
+2022-04-19 20:44:18,156:INFO:Checking base model
+2022-04-19 20:44:18,157:INFO:Base model : Light Gradient Boosting Machine
+2022-04-19 20:44:18,175:INFO:Declaring metric variables
+2022-04-19 20:44:18,203:INFO:Defining Hyperparameters
+2022-04-19 20:44:18,280:INFO:Tuning with n_jobs=-1
+2022-04-19 20:44:18,280:INFO:Initializing RandomizedSearchCV
+2022-04-19 20:44:22,304:INFO:best_params: {'actual_estimator__reg_lambda': 0.0001, 'actual_estimator__reg_alpha': 10, 'actual_estimator__num_leaves': 70, 'actual_estimator__n_estimators': 50, 'actual_estimator__min_split_gain': 0.8, 'actual_estimator__min_child_samples': 81, 'actual_estimator__learning_rate': 0.3, 'actual_estimator__feature_fraction': 1.0, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.5}
+2022-04-19 20:44:22,304:INFO:Hyperparameter search completed
+2022-04-19 20:44:22,304:INFO:SubProcess create_model() called ==================================
+2022-04-19 20:44:22,306:INFO:Initializing create_model()
+2022-04-19 20:44:22,306:INFO:create_model(estimator=PowerTransformedTargetRegressor(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.1, max_depth=-1,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.0, n_estimators=100, n_jobs=-1,
+                                num_leaves=31, objective=None,
+                                power_transformer_method='box-cox',
+                                power_transformer_standardize=True,
+                                random_state=8...
+                                                        importance_type='split',
+                                                        learning_rate=0.1,
+                                                        max_depth=-1,
+                                                        min_child_samples=20,
+                                                        min_child_weight=0.001,
+                                                        min_split_gain=0.0,
+                                                        n_estimators=100,
+                                                        n_jobs=-1,
+                                                        num_leaves=31,
+                                                        objective=None,
+                                                        random_state=880,
+                                                        reg_alpha=0.0,
+                                                        reg_lambda=0.0,
+                                                        silent='warn',
+                                                        subsample=1.0,
+                                                        subsample_for_bin=200000,
+                                                        subsample_freq=0),
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, verbose=True, system=False, metrics=None, experiment_custom_tags=None, add_to_model_list=True, probability_threshold=None, display=<pycaret.internal.Display.Display object at 0x0000021FE3F8F308>, return_train_score=False, kwargs={'reg_lambda': 0.0001, 'reg_alpha': 10, 'num_leaves': 70, 'n_estimators': 50, 'min_split_gain': 0.8, 'min_child_samples': 81, 'learning_rate': 0.3, 'feature_fraction': 1.0, 'bagging_freq': 3, 'bagging_fraction': 0.5})
+2022-04-19 20:44:22,306:INFO:Checking exceptions
+2022-04-19 20:44:22,306:INFO:Importing libraries
+2022-04-19 20:44:22,306:INFO:Copying training dataset
+2022-04-19 20:44:22,308:INFO:Defining folds
+2022-04-19 20:44:22,308:INFO:Declaring metric variables
+2022-04-19 20:44:22,319:INFO:Importing untrained model
+2022-04-19 20:44:22,320:INFO:Declaring custom model
+2022-04-19 20:44:22,334:INFO:Light Gradient Boosting Machine Imported succesfully
+2022-04-19 20:44:22,366:INFO:Starting cross validation
+2022-04-19 20:44:22,367:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2022-04-19 20:44:26,421:INFO:Calculating mean and std
+2022-04-19 20:44:26,422:INFO:Creating metrics dataframe
+2022-04-19 20:44:26,448:INFO:Finalizing model
+2022-04-19 20:44:27,087:INFO:Uploading results into container
+2022-04-19 20:44:27,087:INFO:Uploading model into container now
+2022-04-19 20:44:27,087:INFO:create_model_container: 2
+2022-04-19 20:44:27,087:INFO:master_model_container: 2
+2022-04-19 20:44:27,087:INFO:display_container: 3
+2022-04-19 20:44:27,089:INFO:PowerTransformedTargetRegressor(bagging_fraction=0.5, bagging_freq=3,
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=1.0,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=81,
+                                min_child_weight=0.001, min_split_gain=0.8,
+                                n_estimators=50, n_jobs=-1, num_leaves=70,
+                                objective=None,
+                                power_transformer_method='bo...
+                                                        importance_type='split',
+                                                        learning_rate=0.3,
+                                                        max_depth=-1,
+                                                        min_child_samples=81,
+                                                        min_child_weight=0.001,
+                                                        min_split_gain=0.8,
+                                                        n_estimators=50,
+                                                        n_jobs=-1,
+                                                        num_leaves=70,
+                                                        objective=None,
+                                                        random_state=880,
+                                                        reg_alpha=10,
+                                                        reg_lambda=0.0001,
+                                                        silent='warn',
+                                                        subsample=1.0,
+                                                        subsample_for_bin=200000,
+                                                        subsample_freq=0),
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0)
+2022-04-19 20:44:27,089:INFO:create_model() succesfully completed......................................
+2022-04-19 20:44:27,140:INFO:SubProcess create_model() end ==================================
+2022-04-19 20:44:27,141:INFO:create_model_container: 2
+2022-04-19 20:44:27,142:INFO:master_model_container: 2
+2022-04-19 20:44:27,142:INFO:display_container: 3
+2022-04-19 20:44:27,144:INFO:PowerTransformedTargetRegressor(bagging_fraction=0.5, bagging_freq=3,
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=1.0,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=81,
+                                min_child_weight=0.001, min_split_gain=0.8,
+                                n_estimators=50, n_jobs=-1, num_leaves=70,
+                                objective=None,
+                                power_transformer_method='bo...
+                                                        importance_type='split',
+                                                        learning_rate=0.3,
+                                                        max_depth=-1,
+                                                        min_child_samples=81,
+                                                        min_child_weight=0.001,
+                                                        min_split_gain=0.8,
+                                                        n_estimators=50,
+                                                        n_jobs=-1,
+                                                        num_leaves=70,
+                                                        objective=None,
+                                                        random_state=880,
+                                                        reg_alpha=10,
+                                                        reg_lambda=0.0001,
+                                                        silent='warn',
+                                                        subsample=1.0,
+                                                        subsample_for_bin=200000,
+                                                        subsample_freq=0),
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0)
+2022-04-19 20:44:27,144:INFO:tune_model() succesfully completed......................................
+2022-04-19 20:44:27,216:INFO:Initializing predict_model()
+2022-04-19 20:44:27,216:INFO:predict_model(estimator=PowerTransformedTargetRegressor(bagging_fraction=0.5, bagging_freq=3,
+                                boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, feature_fraction=1.0,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=81,
+                                min_child_weight=0.001, min_split_gain=0.8,
+                                n_estimators=50, n_jobs=-1, num_leaves=70,
+                                objective=None,
+                                power_transformer_method='bo...
+                                                        importance_type='split',
+                                                        learning_rate=0.3,
+                                                        max_depth=-1,
+                                                        min_child_samples=81,
+                                                        min_child_weight=0.001,
+                                                        min_split_gain=0.8,
+                                                        n_estimators=50,
+                                                        n_jobs=-1,
+                                                        num_leaves=70,
+                                                        objective=None,
+                                                        random_state=880,
+                                                        reg_alpha=10,
+                                                        reg_lambda=0.0001,
+                                                        silent='warn',
+                                                        subsample=1.0,
+                                                        subsample_for_bin=200000,
+                                                        subsample_freq=0),
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-04-19 20:44:27,216:INFO:Checking exceptions
+2022-04-19 20:44:27,216:INFO:Preloading libraries
+2022-04-19 20:44:27,216:INFO:Preparing display monitor
