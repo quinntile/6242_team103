@@ -47,6 +47,6 @@ if __name__ == '__main__':
     current_dir = os.path.dirname(__file__)
     data = Modeling(training_path = '/data/training_austin.csv', unseendata_path = '/data/data_unseen_austin.csv')
     data.run_modelling(n_iter=1) # number of iteration during grid search
-    data.final.to_csv(current_dir[:-5] + '/data/prediction_result_austin.csv')
+    data.final.to_csv(current_dir[:-5] + '/visualization/data_source/Austin_price.csv')
 
 

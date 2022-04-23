@@ -63,7 +63,7 @@ Separately, the EXECUTION of each step is:
     ## run_modelling(): create the model (random forest regressor or lightgbm regressor, depending on the city of your choice), tune the model using 10-fold cross validation(n_iter represents the number of iterations the grid search algorithm uses when tuning the hyperparameters, can be specified by user),  and use the tuned model to predict the house prices into the future. In our use case, we predicted into the next 9 months (3 quarters) in the year of 2022. 
 
  * Upon completion of the above functions in sequence, you can save the predicted data into the folder data by using pd.to_csv() API, so that these files can be used for visualization. Example is as below: 
-      data.final.to_csv(current_dir[:-5] + '/data/prediction_result_austin.csv')
+      data.final.to_csv(current_dir[:-5] + '/visualization/data_source/Austin_price.csv')
     
 
 

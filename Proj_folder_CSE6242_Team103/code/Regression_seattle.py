@@ -51,6 +51,6 @@ if __name__ == '__main__':
     current_dir = os.path.dirname(__file__)
     data = Modeling(training_path = '/data/training_seattle.csv', unseendata_path = '/data/data_unseen_seattle.csv')
     data.run_modelling(n_iter=1)
-    data.final.to_csv(current_dir[:-5] + '/data/prediction_result_seattle.csv')
+    data.final.to_csv(current_dir[:-5] + '/visualization/data_source/Seattle_price.csv')
 
 
